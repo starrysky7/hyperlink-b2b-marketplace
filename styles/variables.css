@@ -1,14 +1,14 @@
 :root {
-    --text-color-1: #000;
-    --text-color-2: #5c5c5c;
+    --text-color-1: #222;
+    --text-color-2: #333;
     --link-color: #0066c0;
     --error-color: #f02711;
     --success-color: #008800;
     --border-color-1: #c1c1c1;
-    --border-color-2: #d8dfe9;
+    --border-color-2: #e1e1e1;
     --dynamic-color: #fff;
-    --page-color: #f9f9f9;
-    --paper-color: #fff;
+    --page-color: #fff;
+    --paper-color: #fafafa;
     --modal-header-color: #eae9ec;
     --table-header-color: #eae9ec;
     --primary-icon-color: #666;

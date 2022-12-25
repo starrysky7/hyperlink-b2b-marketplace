@@ -31,14 +31,14 @@ export default function TextField({
         startAdornment={startAdornment}
         inputProps={{ step: step, min: min, max: max }}
         {...rest}
-        sx={[sx, error ? { borderColor: "#ff0033" } : null]}
+        sx={[sx, error ? { borderColor: "var(--error-color)" } : null]}
       />
       {error ? (
         <Typography
+          variant="body2"
           sx={{
-            fontSize: "var(--font-size-input-error)",
             fontWeight: 500,
-            color: "#ff0033",
+            color: "var(--error-color)",
           }}
         >
           {helperText}
@@ -58,7 +58,6 @@ TextField.propTypes = {
   startAdornment: PropTypes.node,
   error: PropTypes.bool,
   helperText: PropTypes.string,
-  marginBottom: PropTypes.string,
   required: PropTypes.bool,
   disabled: PropTypes.bool,
   min: PropTypes.number,
@@ -74,7 +73,6 @@ TextField.defaultProps = {
   label: null,
   error: false,
   helperText: null,
-  marginBottom: "",
   required: false,
   value: "",
   min: null,

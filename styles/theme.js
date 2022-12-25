@@ -2,44 +2,44 @@ import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   typography: {
-    // fontFamily: "Avenir",
+    fontFamily: "Avenir",
     h1: {
       fontSize: "22px",
-      fontWeight: 900,
-      color: "var(--primary-font-color)",
+      fontWeight: 500,
+      color: "var(--text-color-1)",
     },
     h2: {
       fontSize: "15px",
       fontWeight: 700,
-      color: "var(--primary-font-color)",
+      color: "var(--text-color-1)",
     },
     h3: {
       fontSize: "16px",
       fontWeight: 700,
-      color: "var(--primary-font-color)",
+      color: "var(--text-color-1)",
     },
     h4: {
       fontSize: "14px",
       fontWeight: 900,
-      color: "var(--primary-font-color)",
+      color: "var(--text-color-1)",
     },
     body1: {
       fontSize: "14px",
-      color: "var(--primary-font-color)",
+      color: "var(--text-color-1)",
       fontWeight: 300,
     },
     body2: {
       fontSize: "14px",
-      color: "var(--primary-font-color)",
+      color: "var(--text-color-1)",
       fontWeight: 500,
     },
     subtitle1: {
       fontSize: "13px",
-      color: "var(--primary-font-color)",
+      color: "var(--text-color-1)",
     },
     subtitle2: {
       fontSize: "12px",
-      color: "var(--primary-font-color)",
+      color: "var(--text-color-1)",
       fontWeight: 500,
     },
   },
@@ -75,8 +75,8 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           fontSize: "14px",
-          color: "#4d4663",
-          marginBottom: "4px",
+          color: "var(--text-color-1)",
+          marginBottom: "2px",
           fontWeight: 500,
         },
         asterisk: {

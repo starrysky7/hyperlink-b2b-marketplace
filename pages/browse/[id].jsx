@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import ProductDetails from "../../components/product-details/product-details";
 import ProductImageGrid from "../../components/product-details/product-image-grid";
 import ProductCheckoutOptions from "../../components/product-details/product-checkout-options";
-import FilterOptions from "../../components/catalog/filter-options";
+import AppBar from "../../components/nav/appbar";
 
 export default function ProductDetailsPage() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function ProductDetailsPage() {
         <meta name="description" content={config.description} />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      <FilterOptions />
+      <AppBar />
       <Grid container columnSpacing={3} sx={{ padding: "50px 100px" }}>
         <Grid item xs={0} sm={5}>
           <ProductImageGrid />

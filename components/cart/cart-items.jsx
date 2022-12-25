@@ -17,6 +17,30 @@ export default function CartItems() {
       qty: 1,
       msrp: 9000,
     },
+    {
+      id: 2,
+      name: "Microsoft FHD-00020 Bluetooth Arc Mouse (Black)",
+      qty: 1,
+      msrp: 9000,
+    },
+    {
+      id: 2,
+      name: "Microsoft FHD-00020 Bluetooth Arc Mouse (Black)",
+      qty: 1,
+      msrp: 9000,
+    },
+    {
+      id: 1,
+      name: "Microsoft Surface Studio 14.4 inches Touchscreen Intel ® Core i7 Laptop (32GB Memory, Windows 11 Home, 2TB SSD - Platinum, 2.664Kg)ps",
+      qty: 1,
+      msrp: 110000,
+    },
+    {
+      id: 1,
+      name: "Microsoft Surface Studio 14.4 inches Touchscreen Intel ® Core i7 Laptop (32GB Memory, Windows 11 Home, 2TB SSD - Platinum, 2.664Kg)ps",
+      qty: 1,
+      msrp: 110000,
+    },
   ];
 
   return (

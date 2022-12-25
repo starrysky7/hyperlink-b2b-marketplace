@@ -2,7 +2,6 @@ import Head from "next/head";
 import config from "../../config";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import FilterOptions from "../../components/catalog/filter-options";
 import theme from "../../styles/theme";
 import ProductGrid from "../../components/order-summary/product-grid";
 
@@ -14,8 +13,7 @@ export default function Summary() {
         <meta name="description" content={config.description} />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
-      {/* <MyAppBar /> */}
-      <FilterOptions />
+
       <Grid
         container
         columnSpacing={0}
@@ -36,4 +34,12 @@ export default function Summary() {
       </Grid>
     </Box>
   );
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      protected: true,
+    },
+  };
 }
