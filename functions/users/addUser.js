@@ -1,12 +1,12 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
-const cors = require("cors");
+const cors = require("cors")({ origin: true });
 
 const addUser = functions.https.onRequest((req, res) => {
   console.log(req.body);
 
   //cors
-  cors(req, res, () => {
+  cors(req, res, async () => {
     //validate request method
     if (!req.method === "POST") {
       res.status(404).send("Route not found");
@@ -21,7 +21,7 @@ const addUser = functions.https.onRequest((req, res) => {
 
     try {
       //add document to collection
-      const writeResult = admin
+      const writeResult = await admin
         .firestore()
         .collection("users")
         .doc(req.body.id)

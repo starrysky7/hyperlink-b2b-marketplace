@@ -58,9 +58,9 @@ export default function CategoryBrowser() {
           if (isLoading) {
             return (
               <Stack spacing={1}>
-                <Skeleton variant="rounded" height={50} width={50} />
-                <Skeleton variant="rounded" height={50} width={50} />
-                <Skeleton variant="rounded" height={50} width={50} />
+                <Skeleton variant="rounded" height={70} width={70} />
+                <Skeleton variant="rounded" height={70} width={70} />
+                <Skeleton variant="rounded" height={70} width={70} />
               </Stack>
             );
           } else if (isError) {

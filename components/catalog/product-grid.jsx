@@ -31,11 +31,69 @@ export default function ProductGrid() {
    */
   if (isLoading) {
     return (
-      <Stack spacing={1}>
-        <Skeleton variant="rounded" height={50} width={50} />
-        <Skeleton variant="rounded" height={50} width={50} />
-        <Skeleton variant="rounded" height={50} width={50} />
-      </Stack>
+      <Grid
+        container
+        columnSpacing={1.5}
+        rowSpacing={2}
+        sx={{ margin: "10px 0 20px 0" }}
+      >
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+        <Grid item xs={6} sm={4} md={3} lg={3} xl={3}>
+          <Skeleton
+            variant="rounded"
+            height={280}
+            sx={{ borderRadius: "12px" }}
+          />
+        </Grid>
+      </Grid>
     );
   } else if (isError) {
     /*

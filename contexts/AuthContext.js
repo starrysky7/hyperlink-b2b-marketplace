@@ -38,25 +38,24 @@ export function AuthProvider({ children }) {
             // Signed in
             const user = userCredential.user;
             const res = await axios.post(
-              "http://127.0.0.1:5001/hyperlink-b2b-ecommerce/us-central1/user-addUser",
+              `http://127.0.0.1:5001/hyperlink-b2b-ecommerce/us-central1/user-addUser`,
               {
                 id: user.uid,
-                name: req.body.name,
-                emailAddress: action.payload.emailAddress,
-                businessName: action.payload.businessName,
-                licenseType: action.payload.licenseType,
-                licenseNumber: action.payload.licenseNumber,
-                addressLine1: action.payload.addressLine1,
-                addressLine2: action.payload.addressLine2,
-                city: action.payload.city,
-                state: action.payload.state,
-                postCode: action.payload.postCode,
+                name: "test",
+                emailAddress: "test@test.com",
+                businessName: "test",
+                licenseType: "test",
+                licenseNumber: "test",
+                addressLine1: "test",
+                addressLine2: "test",
+                city: "test",
+                state: "test",
+                postCode: "test",
               }
             );
+
             if (res.data.status) {
               router.push("/browse");
-            } else {
-              //delete user
             }
           })
           .catch((error) => {
